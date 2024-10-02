@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-direction: row;
+    /* Buttons will remain side by side */
+}
+
+/* Button styling */
+#start,
+#stop {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+}
