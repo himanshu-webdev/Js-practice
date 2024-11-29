@@ -14,6 +14,7 @@ body{
 }
 
 .wrapper{
+    background-color: antiquewhite;
     height: 250px;  
     text-align: center;
     width: 400px;
