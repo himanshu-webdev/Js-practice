@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'my-font';
+    src: url('Font/digital-7.regular.ttf') format('truetype'),
+    url('Font/digital-7.ttf') format('truetype'),
+    local('my-font Regular'),
+    local('my-font');
+}
+
+body{
+    font-family: 'my-font', 'my-font Bold', 'my-font Italic';
+    src: url('Font/digital-7.regular.ttf') format('truetype'),
+         url('Font/digital-7-bold.ttf') format('truetype')
+            /* for bold */
+                ,
+            url('Font/digital-7-italic.ttf') format('truetype')
+            /* for italic */
+        ;
+}
+
+body{
+    background: rgb(51, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(211, 211, 211);    
+}
+
+.screen{
+    width: 224px; 
+    background-color: rgb(176, 205, 176);
+    font-size: 40px;
+    text-align: end;
+    padding: 4px;
+    overflow: hidden;   
+    /* width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    overflow: hidden; */
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(176, 205, 176);
+}
+
+.buttons{
+    width: 232px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+button{
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(131, 129, 129);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin: 4px;
+    border-radius: 40px;
+}
+
+button:hover{
+    background-color: rgb(111, 110, 100);
+}
+
+button:active{
+    background-color: rgb(232, 232, 232);
+}
+
+#equals{
+    background-color: rgb(218, 2, 2);
+}
+
+#equals:hover{
+    background-color: rgb(198, 1, 1);
+}
+
+#clear{
+    background-color: rgb(252, 226, 27);
+    width: 100%;
+    font-size: 30px;
+}
+
+#clear:hover{
+    background-color: rgb(252, 201, 17);
+}
