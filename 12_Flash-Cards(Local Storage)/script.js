@@ -10,7 +10,7 @@ function createCard(){
     createBox.style.display = "block";
 }
 
-//Delete Single or Recent Card
+
 
 function deleteCards(){
   localStorage.clear();
