@@ -1,13 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap');
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
-body{
-  font-family: "Nunito", sans-serif;
-  background: darkseagreen;
-  font-size: 1rem;
-}
+  body{
+    font-family: "Nunito", sans-serif;
+    background: lightblue;
+    color: rgb(14, 83, 221);
+  }
 
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  nav h2{
+    font-size: 2rem;
+    margin: auto;
+  }
+
+  .user-input{
+    margin-top: 2px;
+    width: 350px; 
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .user-input input{
+    width: 75%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.30s ease-in-out;
+  }
+
+  
+  .user-input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    color: black;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+  }  
+
+  .user-input button:hover {
+    background-color: rgb(96, 200, 219);
+  }
+
+  .to-do-items{
+    width: 500px;
+    margin: auto;
+  }
+
+  .item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #454545;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    text-transform: uppercase;
+    transition: all 0.30s ease-in-out;
+  }
+
+  
+  
+  .item i {
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  @media(max-width:1280px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media(max-width:768px) {
+    .container {
+      width: 95%;
+    }
+  
+    #nav {
+      padding: 20px;
+      gap: 10px;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    #nav h2 {
+      margin: 10px 0;
+    }
+  
+    .user_input {
+       width: 100%;
+    }
+  
+    #to_do_list {
+      width: 100%;
+    }
+  }
+  
+  @media(max-width:480px) {
+    .user_input input {
+      width: 74%;
+    }
+
+   
+  }
+  
+  @media(max-width:320px) {
+    .user_input input {
+      width: 60%;
+    }
+  }
