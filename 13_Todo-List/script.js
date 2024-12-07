@@ -10,7 +10,7 @@ input.addEventListener("keydown", function(e){
 
 
 function addItem(){
-   const divParent =  document.createElement("div");
+   const divParent = document.createElement("div");
    const divChild =  document.createElement("div");
    const checkIcon = document.createElement("i");
    const trashIcon = document.createElement("i");
@@ -38,5 +38,5 @@ function addItem(){
 
    toDoItems.appendChild(divParent);
 
-    input.value = "";
+   input.value = "";
 }
