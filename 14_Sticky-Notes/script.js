@@ -3,12 +3,12 @@ const notesContainer = document.getElementById("container");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach(note => {
-    const noteElement = createNoteElement(note.id, note.content);
-    notesContainer.insertBefore(noteElement, addNoteButton);
+  const noteElement = createNoteElement(note.id, note.content);
+  notesContainer.insertBefore(noteElement, addNoteButton);
 });
 
 addNoteButton.addEventListener("click", () => {
-    addNote();
+  addNote();
 });
 
 function getNotes(){
@@ -36,7 +36,7 @@ function createNoteElement(id, content){
     );
 
     if(doDelete){
-        deleteNote(id, element);
+      deleteNote(id, element);
     }
   });
 
@@ -58,17 +58,17 @@ function addNote(){
 }
 
 function updateNote(id, newContent){
-    const notes = getNotes();
+  const notes = getNotes();
 
-    const targetNote = notes.filter(note => note.id == id )[0];
+  const targetNote = notes.filter(note => note.id == id )[0];
 
-    targetNote.content = newContent;
-    saveNotes(notes);
+  targetNote.content = newContent;
+  saveNotes(notes);
 }
 
 function deleteNote(id, element){
-   const notes  = getNotes().filter(note => note.id != id);
+  const notes  = getNotes().filter(note => note.id != id);
 
-   saveNotes(notes);
-   notesContainer.removeChild(element);
+  saveNotes(notes);
+  notesContainer.removeChild(element);
 }
