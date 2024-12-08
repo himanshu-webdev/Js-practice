@@ -8,7 +8,20 @@
 </head>
 <body>
     
-     
+    <div class="box">
+        <h3>Box-Shadow Generator</h3>
+        <label>Offset-X</label>
+        <input class="offset-x" type="range" min="0" max="100" value="2">
+        <label>Offset-Y</label>
+        <input class="offset-y" type="range" min="0" max="100" value="2">
+        <label>Blur-Radius</label>
+        <input class="blur-radius" type="range" min="0" max="100" value="2">
+        <label>Blur-Spread</label>
+        <input class="blur-spread" type="range" min="0" max="100" value="2">
+        <label>Color</label>
+        <input class="color" type="color" value="#000000">
+        <input class="css-value" type="text" onclick="this.select()" readonly>
+    </div>
 
     <script src="script.js"></script>
 </body>
