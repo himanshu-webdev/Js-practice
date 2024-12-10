@@ -32,6 +32,8 @@ async function checkWeather(city){
             weatherIcon.src = "images/rain.png";
         } else if(data.weather[0].main == "Snow"){
             weatherIcon.src = "images/snow.png";
+        } else if(data.weather[0].main == "Sun Clouds"){
+            weatherIcon.src = "assets/sun clouds.png";
         } 
 
         document.querySelector(".weather").style.display = "block";   

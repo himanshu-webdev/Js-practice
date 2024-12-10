@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +8,10 @@
 }
 
 body {
-    background-color: darkolivegreen;
+    background: url('assets/mountains\ and\ pine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,4 +123,71 @@ body {
     font-size: 14px;
     margin-top: 10px;
     display: none;    
+}
+
+@media (max-width: 768px) {
+    .details {
+        gap: 20px;
+    }
+
+    .col {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .details {
+        gap: 10px;
+    }
+
+    .col {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    }
+
+    .weather h1 {
+        font-size: 1.4rem;
+    }
+
+    .weather h2  {
+        font-size: 1rem;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .search input {
+        height: 40px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search button img {
+        width: 14px;
+    }
+
+    .col p{
+        font-size: 14px;
+    }
 }
