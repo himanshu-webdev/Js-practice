@@ -91,6 +91,7 @@ const getExchangeRate = async () => {
         const convertedAmount = (amount * conversionRate).toFixed(2);
         convertedAmountElement.value = convertedAmount;
         resultElement.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+        
     } catch (error) {
         container.innerHTML = `<h1>Error while fetching exchange rates!</h1>`;
     }
