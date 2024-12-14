@@ -154,18 +154,19 @@ body {
     }
 
     .col {
-        display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 0 16px;
     }
 
     .weather h1 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .weather h2  {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .weather-icon {
